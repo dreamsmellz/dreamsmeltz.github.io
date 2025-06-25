@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produkty - Dream Smellz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Dream Smellz</h1>
+            <p>Odkryj świat wyjątkowych aromatów</p>
+        </div>
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="produkty.html">Produkty</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="koszyk.html"><i class="fas fa-shopping-cart"></i></a>
+        </nav>
+    </header>
+
+    <section class="products-section">
+        <h2 class="section-title">Nasze Perfumy</h2>
+        
+        <div class="gender-tabs">
+            <button class="tab-btn active" onclick="filterProducts('all')">Wszystkie</button>
+            <button class="tab-btn" onclick="filterProducts('woman')">Dla Niej</button>
+            <button class="tab-btn" onclick="filterProducts('man')">Dla Niego</button>
+        </div>
+
+        <div class="products-container">
+            <!-- Przykładowe produkty kobiece -->
+            <div class="product-card woman">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1594035910387-fea47794261f');"></div>
+                <h3>Carolina Herrera Good Girl</h3>
+                <p class="price">280 zł</p>
+                <p class="volume">100 ml</p>
+                <button class="add-to-cart">Dodaj do koszyka</button>
+                <a href="good-girl.html" class="details-link">Szczegóły</a>
+            </div>
+
+            <!-- Przykładowe produkty męskie -->
+            <div class="product-card man">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1605244863943-8879a3b3c1af');"></div>
+                <h3>Valentino Born In Roma Green Stravaganza Uomo</h3>
+                <p class="price">250 zł</p>
+                <p class="volume">100 ml</p>
+                <button class="add-to-cart">Dodaj do koszyka</button>
+                <a href="valentino.html" class="details-link">Szczegóły</a>
+            </div>
+
+            <!-- Tutaj możesz dodać więcej produktów -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Kontakt</h3>
+                <p>email: kontakt@dreamsmellz.pl</p>
+                <p>tel: 518 262 854</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2025 Dream Smellz. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
